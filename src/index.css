@@ -1,34 +1,47 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
+  background-image: url("./PuppyBowlBackground.jpg"); /* The image used as a background. */
+  background-repeat: no-repeat; /* The background image will not repeat. */
+  background-attachment: fixed; /* The background image will not scroll with the page. */
+  background-size: cover; /* The background image will cover the entire area of the element. */
+}
+
+.NavBar {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: blue;
+  color: black;
+  border: 5px black;
+}
+
+.Players {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.PCard {
+  max-width: auto; /* The width of the card. */
+  max-height: auto; /* The height of the card. */
+  margin: 0px; /* The margin around the card. */
+  padding: 40px;
+  background-color: blanchedalmond;
+  border: solid black;
+  border-radius: 80px;
+  box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, .50);
+  overflow: hidden; /* Any content that goes outside the card will be hidden. */
+  position: relative; /* The card's position is set to relative so it can be moved using the transform property. */
+  transition: transform 0.3s; /* Transition effect for the transform property. */
+}
+
+.PDetails {
+ text-align: center;
+}
+
+.image {
+  border: solid 0.5px blanchedalmond;
+  border-radius: 50px;
 }
 
 h1 {
