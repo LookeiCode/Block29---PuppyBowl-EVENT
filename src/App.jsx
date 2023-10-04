@@ -1,7 +1,9 @@
-import { useState } from 'react'
-import './index.css'
 import NavBar from './components/NavBar'
 import AllPlayers from './components/AllPlayers'
+import { BrowserRouter } from 'react-router-dom'
+
+import './index.css'
+
 
 
 function App() {
@@ -9,7 +11,10 @@ function App() {
 
   return (
     <>
-      <AllPlayers />
+      <BrowserRouter>
+        <NavBar />
+        <AllPlayers />
+      </BrowserRouter>
     </>
   )
 }
