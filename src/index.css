@@ -9,7 +9,8 @@ body {
 
 .NavContainer {
   padding: 0px;
-  margin-left: 150px;
+  margin: 0 150px;
+  margin-bottom: 50px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -20,11 +21,10 @@ body {
   margin-top: 0px;
   padding: 0px;
   height: 50px;
-  width: 1100px;
   justify-content: center;
   align-items: center;
-  background-color: orangered;
-  border: solid 0px red;
+  background-color: blanchedalmond;
+  border: solid 0px blanchedalmond;
   border-radius: 0px 0px 30px 20px;
   box-shadow: 0px 5px 5px 5px black;
 }
@@ -34,9 +34,10 @@ body {
 }
 
 .navBarItems {
-  color: white;
+  color: black;
   text-shadow: black;
   font-size: xx-large;
+  font-weight: 800;
   text-decoration: none;
   margin-right: 30px;
 }
@@ -49,15 +50,20 @@ body {
   justify-content: center;
 }
 
+img {
+  height: 300px;
+  width: 300px;
+}
+
 .PCard {
   padding: 40px;
   background-color: blanchedalmond;
   border: solid black;
   border-radius: 80px;
   box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, .50);
-  overflow: hidden; /* Any content that goes outside the card will be hidden. */
-  position: relative; /* The card's position is set to relative so it can be moved using the transform property. */
-  transition: transform 0.3s; /* Transition effect for the transform property. */
+  overflow: hidden; 
+  position: relative; 
+  transition: transform 0.3s; 
 }
 
 .PDetails {

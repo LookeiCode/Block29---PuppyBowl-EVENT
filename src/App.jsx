@@ -1,6 +1,9 @@
 import NavBar from './components/NavBar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './components/Home'
 import AllPlayers from './components/AllPlayers'
-import { BrowserRouter } from 'react-router-dom'
+import NewPlayerForm from './components/NewPlayerForm'
 
 import './index.css'
 
@@ -13,7 +16,12 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <AllPlayers />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='AllPlayers' element={<AllPlayers />} />
+            <Route path='NewPlayerForm' element={<NewPlayerForm />} />
+            <Route path='SinglePlayer' element={<div></div>} />
+          </Routes>
       </BrowserRouter>
     </>
   )

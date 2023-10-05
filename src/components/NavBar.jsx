@@ -15,18 +15,9 @@ export default function NavBar() {
             <div className="NavContainer">
                 <div className="NavBar">
                     <Link id="FirstNavBItem" className="navBarItems" to='/'>Home |</Link>
-                    <Link className="navBarItems" to='AllPlayers.jsx'>All Players |</Link>
-                    <Link className="navBarItems" to='NewPlayerForm.jsx'>New Player Form |</Link>
-                    <Link className="navBarItems" to='SinglePlayer.jsx'>Single Player</Link>
-                </div>
-
-                <div>
-                    <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='AllPlayers' element={<AllPlayers />} />
-                        <Route path='NewPlayerForm' element={<NewPlayerForm />} />
-                        <Route path='SinglePlayer' element={<div></div>} />
-                    </Routes>
+                    <Link className="navBarItems" to='AllPlayers'>All Players |</Link>
+                    <Link className="navBarItems" to='NewPlayerForm'>New Player Form |</Link>
+                    <Link className="navBarItems" to='poop'>Single Player</Link>
                 </div>
             </div>
         </>
