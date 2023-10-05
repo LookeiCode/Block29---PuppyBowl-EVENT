@@ -12,20 +12,22 @@ export default function NavBar() {
 
     return (
         <>
-            <div className="NavBar">
-                <Link to='Home.jsx'>All Players</Link>
-                <Link to='AllPlayers.jsx'>All Players</Link>
-                <Link to='NewPlayerForm.jsx'>New Player Form</Link>
-                <Link to='SinglePlayer.jsx'>Single Player</Link>
-            </div>
+            <div className="NavContainer">
+                <div className="NavBar">
+                    <Link id="FirstNavBItem" className="navBarItems" to='/'>Home |</Link>
+                    <Link className="navBarItems" to='AllPlayers.jsx'>All Players |</Link>
+                    <Link className="navBarItems" to='NewPlayerForm.jsx'>New Player Form |</Link>
+                    <Link className="navBarItems" to='SinglePlayer.jsx'>Single Player</Link>
+                </div>
 
-            <div>
+                <div>
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='AllPlayers' element={<AllPlayers />} />
                         <Route path='NewPlayerForm' element={<NewPlayerForm />} />
                         <Route path='SinglePlayer' element={<div></div>} />
                     </Routes>
+                </div>
             </div>
         </>
     )

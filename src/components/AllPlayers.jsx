@@ -24,14 +24,6 @@ export default function AllPlayers() {
     fetchPlayers()
   }, [])
 
-  const renderPlayers = (player) => {
-    return (
-      <div>
-        {player.name}
-      </div>
-    )
-  }
-
   return (
     <div className="Players">
       {players.map((player) => (

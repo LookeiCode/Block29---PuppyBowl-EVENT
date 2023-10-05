@@ -1,16 +1,44 @@
 body {
-  background-image: url("./PuppyBowlBackground.jpg"); /* The image used as a background. */
-  background-repeat: no-repeat; /* The background image will not repeat. */
-  background-attachment: fixed; /* The background image will not scroll with the page. */
-  background-size: cover; /* The background image will cover the entire area of the element. */
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./PuppyBowlBackground.jpg");
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover; 
+}
+
+.NavContainer {
+  padding: 0px;
+  margin-left: 150px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .NavBar {
   display: flex;
-  background-color: red;
-  color: black;
-  border: 5px black;
+  margin-top: 0px;
+  padding: 0px;
   height: 50px;
+  width: 1100px;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
+  border: solid 0px red;
+  border-radius: 0px 0px 30px 20px;
+  box-shadow: 0px 5px 5px 5px black;
+}
+
+#FirstNavBItem {
+  margin-left: 20px;;
+}
+
+.navBarItems {
+  color: white;
+  text-shadow: black;
+  font-size: xx-large;
+  text-decoration: none;
+  margin-right: 30px;
 }
 
 .Players {
@@ -19,13 +47,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 
 .PCard {
-  max-width: auto; /* The width of the card. */
-  max-height: auto; /* The height of the card. */
-  margin: 0px; /* The margin around the card. */
   padding: 40px;
   background-color: blanchedalmond;
   border: solid black;
