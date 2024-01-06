@@ -1,25 +1,20 @@
-import React from 'react'
-import ReactDOM from "react-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Search from './Search';
 
-import { Route, Routes, Link } from "react-router-dom";
+const NavBar = ({ allPlayers }) => {
+  return (
+    <div className="NavContainer">
+      <div className="NavBar">
+        <Link id="FirstNavBItem" className="navBarItems" to='/'>Home |</Link>
+        <Link className="navBarItems" to='AllPlayers'>All Players |</Link>
+        <Link className="navBarItems" to='NewPlayerForm'>New Player Form |</Link>
+        <Link className="navBarItems" to='DeletePlayer'>Delete Player |</Link>
 
-import Home from './Home'
-import AllPlayers from './AllPlayers'
-import NewPlayerForm from './NewPlayerForm'
-import SinglePlayer from './SinglePlayer'
+        <Search allPlayers={allPlayers} />
+      </div>
+    </div>
+  );
+};
 
-export default function NavBar() {
-
-    return (
-        <>
-            <div className="NavContainer">
-                <div className="NavBar">
-                    <Link id="FirstNavBItem" className="navBarItems" to='/'>Home |</Link>
-                    <Link className="navBarItems" to='AllPlayers'>All Players |</Link>
-                    <Link className="navBarItems" to='NewPlayerForm'>New Player Form |</Link>
-                    <Link className="navBarItems" to='poop'>Single Player</Link>
-                </div>
-            </div>
-        </>
-    )
-}
+export default NavBar;
